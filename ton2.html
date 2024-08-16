@@ -41,7 +41,7 @@
         //     }
         //     );
         window.onload = async () => {
-        const connector = new TonConnectSDK.TonConnect({manifestUrl: 'https://ratingers.pythonanywhere.com/ratelance/tonconnect-manifest.json'});
+        const connector = new TonConnectSDK.TonConnect({manifestUrl: 'https://raw.githubusercontent.com/laifugroup/ton1/main/tonconnect-manifest.json'});
         window.connector = connector;  // for experimenting in browser console
         
         const walletsList = await connector.getWallets();
